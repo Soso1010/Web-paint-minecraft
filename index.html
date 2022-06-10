@@ -1,0 +1,48 @@
+<!--esse arquivo já se encontra parcialmente pronto para a aula C85-->
+
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>C85</title>
+
+		<!--link para o arquivo CSS:-->
+		<link rel="stylesheet" href="style.css">
+
+		<!--link para o arquivo fabric.js (o canvas utiliza essa biblioteca):-->
+		<script src="fabric.js"></script>
+
+		<!--links bootstraps:-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	
+	</head>
+
+	<!--adicione uma class bodyBackground à tag body (isso adicionará o background à página HTML)-->
+	<body class="bodyBackground">
+
+	
+		<center>
+
+			<!--adicione a class bootstrap btn-primary à tag h2, para adicionar um fundo azul com a fonte em branco:-->
+			<h2 class="btn-primary">MINECRAFT</h2>
+			
+			<!--adicione a class bootstrap btn-danger à tag div, para adicionar um fundo vermelho com a fonte em branco:-->
+			<div id="headInfo" class="btn-danger">
+				<!--adicione duas tags span dentro das tags h3 abaixo (entre a tag de abertura e a tag de fechamento)
+				e forneça o id currentWidth para a largura e currentHeight para a largura, além disso ajuste ambas para >30
+				(com isso serão mostradas a largura e altura dos blocos, assim como ao inciar serão ajustados para 30px):-->
+				<h3>Largura atual  = <span id="currentWidth" > 30</span>></span></h3>
+				<h3>Altura atual  = <span id="currentHeight" > 30</span></h3>
+			</div>
+          <canvas width="1000" height="600" id="myCanvas"></canvas>
+		</center>
+
+		<script src="main.js"></script> <!--link do arquivo JS-->
+
+	</body>
+
+</html>
